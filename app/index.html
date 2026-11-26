@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NusaStat — National Statistics Portal of Indonesia</title>
+<meta name="description" content="NusaStat: Indonesia's national statistics in one place — population, economy, prices, labour and social indicators, with real figures, sources and years.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/" aria-label="NusaStat home">
+      <svg class="brand-mark" viewBox="0 0 48 48" width="34" height="34" aria-hidden="true">
+        <rect x="2" y="2" width="44" height="44" rx="9" fill="#F2A900"/>
+        <rect x="11" y="24" width="6" height="13" rx="1.5" fill="#0F2B46"/>
+        <rect x="21" y="17" width="6" height="20" rx="1.5" fill="#0F2B46"/>
+        <rect x="31" y="11" width="6" height="26" rx="1.5" fill="#0F2B46"/>
+        <circle cx="34" cy="10" r="3.4" fill="#B3261E"/>
+      </svg>
+      <span class="brand-name">NusaStat</span>
+      <span class="brand-sub">Indonesia in numbers</span>
+    </a>
+    <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">&#9776;</button>
+    <nav id="main-nav" class="main-nav" aria-label="Sections">
+      <a href="#/" data-route="">Overview</a>
+      <a href="#/population" data-route="population">Population</a>
+      <a href="#/economy" data-route="economy">Economy</a>
+      <a href="#/prices" data-route="prices">Prices</a>
+      <a href="#/labour" data-route="labour">Labour</a>
+      <a href="#/social" data-route="social">Social</a>
+      <a href="#/data" data-route="data">Data Explorer</a>
+      <a href="#/about" data-route="about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="page" class="wrap" tabindex="-1"></main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>NusaStat</strong> is an independent statistics portal. It is not the official site of BPS — Statistics Indonesia. Every figure on this site names its source and year.</p>
+    <p>Sources: BPS — Statistics Indonesia · World Bank, World Development Indicators · Bank Indonesia. <a href="#/about">Methodology &amp; full source list</a></p>
+  </div>
+</footer>
+
+<script type="module" src="./main.js"></script>
+</body>
+</html>
